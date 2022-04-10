@@ -1,0 +1,22 @@
+{
+  "name": "g-drive-storage-uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephThomasVasquez/g-drive-storage-uploader.git"
+  },
+  "author": "Joseph Thomas Vasquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosephThomasVasquez/g-drive-storage-uploader/issues"
+  },
+  "homepage": "https://github.com/JosephThomasVasquez/g-drive-storage-uploader#readme",
+  "dependencies": {
+    "googleapis": "^100.0.0"
+  }
+}
