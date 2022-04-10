@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon backend/server"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/JosephThomasVasquez/g-drive-storage-uploader#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "googleapis": "^100.0.0"
   }
 }
