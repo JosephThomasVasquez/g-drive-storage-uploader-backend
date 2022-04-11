@@ -64,6 +64,7 @@ const uploadFile = async () => {
     console.log(response.data);
 
     createPublicURL(response.data.id);
+    listFiles();
   } catch (error) {
     console.log(error.message);
   }
@@ -95,6 +96,16 @@ const createPublicURL = async (fileId) => {
 };
 
 uploadFile();
+
+const listFiles = async () => {
+  try {
+    const response = await drive.files.list({});
+
+    console.log(response.data);
+  } catch (error) {
+    console.log(error.message);
+  }
+};
 
 // Sets server port to 5000 unless a port is already assigned.
 const { PORT = 5000 } = process.env;
