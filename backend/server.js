@@ -63,10 +63,7 @@ const uploadFile = async () => {
     });
     console.log(response.data);
 
-    setTimeout(() => {
-      //   deleteFile(response.data.id);
-      createPublicURL(response.data.id);
-    }, 10000);
+    createPublicURL(response.data.id);
   } catch (error) {
     console.log(error.message);
   }
